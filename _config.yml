@@ -1,3 +1,7 @@
-theme: Cayman-Dark
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-remote-theme
+minima:
+  skin: dark 
 title: Coomer Mobile Pages
 description: A github pages site for Coomer Mobile
