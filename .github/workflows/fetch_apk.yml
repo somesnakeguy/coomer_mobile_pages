@@ -1,0 +1,40 @@
+name: Process pushed APK and release notes
+
+on:
+  push:
+    paths:
+      - 'assets/apks/**'
+      - '_includes/release_notes.md'
+  workflow_dispatch:
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate and normalize APK
+        run: |
+          set -eux
+          mkdir -p assets/apks
+          apk_file=$(ls assets/apks/*.apk 2>/dev/null | head -n1 || true)
+          if [ -z "$apk_file" ]; then
+            echo "No APK found in assets/apks/ — ensure the source workflow pushed the .apk file to this path.";
+            exit 1
+          fi
+          echo "Found APK: $apk_file"
+          # Copy to normalized filename used by the site
+          cp "$apk_file" assets/apks/app-latest.apk
+
+      - name: Check release notes
+        run: |
+          set -eux
+          if [ ! -f _includes/release_notes.md ]; then
+            echo "Warning: _includes/release_notes.md not found. The source workflow should push it alongside the APK.";
+          else
+            echo "Release notes present.";
+            echo "---";
+            head -n 20 _includes/release_notes.md || true
+          fi
+
