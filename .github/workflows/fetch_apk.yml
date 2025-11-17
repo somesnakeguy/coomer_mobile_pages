@@ -14,7 +14,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Validate and normalize APK
+      - name: Validate APK
         run: |
           set -eux
           mkdir -p assets/apks
@@ -24,8 +24,6 @@ jobs:
             exit 1
           fi
           echo "Found APK: $apk_file"
-          # Copy to normalized filename used by the site
-          cp "$apk_file" assets/apks/app-latest.apk
 
       - name: Check release notes
         run: |

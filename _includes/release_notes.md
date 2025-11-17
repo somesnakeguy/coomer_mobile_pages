@@ -1,7 +1,8 @@
-### Release v1.3.0+10
-Download the latest version: [app-latest.apk](/assets/apks/app-latest.apk) ([app-release-1.3.0+10.apk](/assets/apks/app-release-1.3.0+10.apk))
+### Latest Release
 
-This release introduces the ability to download posts, allowing you to save your favorite content for offline viewing. Please note that this feature is still under development, and we'll be rolling out further optimizations in upcoming releases.
+Download: [app-release-1.3.0+10.apk](/assets/apks/app-release-1.3.0+10.apk)
+
+**What's New:** Post download functionality now available, enabling offline access to your favorite content. Early release—further optimizations coming soon.
 
 ---
 
