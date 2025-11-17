@@ -33,6 +33,7 @@ jobs:
             for (const run of runs.data.workflow_runs) {
               const runDate = new Date(run.created_at);
               runDate.setHours(0, 0, 0, 0);
+              console.log(`Checking run ${run.id} from ${runDate.toISOString().split('T')[0]}`);
               
               if (runDate < today) {
                 console.log(`Deleting run ${run.id} from ${run.created_at}`);
