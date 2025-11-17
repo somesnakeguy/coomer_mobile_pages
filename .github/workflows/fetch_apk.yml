@@ -5,6 +5,7 @@ on:
     paths:
       - 'assets/apks/**'
       - '_includes/release_notes.md'
+      - '!.github/workflows/cleanup.yml'
   workflow_dispatch:
 
 jobs:
