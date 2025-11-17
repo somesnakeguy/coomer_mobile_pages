@@ -23,7 +23,6 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               workflow_id: 'fetch_apk.yml',
-              status: 'completed', "failure"
               per_page: 100
             });
 
