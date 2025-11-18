@@ -43,7 +43,7 @@ def main():
         apk_basename = apk.name
         version_header = apk_basename.replace("app-release-", "").rsplit(".apk", 1)[0]
         header = f"### Release v{version_header}"
-        link = f"/assets/apks/{apk_basename}"
+        link = f"https://github.com/somesnakeguy/coomer_mobile_pages/raw/refs/heads/main/assets/apks/{apk_basename}"
     else:
         apk_basename = f"app-release-{version}.apk"
         header = f"### Release v{version}"
