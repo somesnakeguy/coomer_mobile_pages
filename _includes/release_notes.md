@@ -1,7 +1,25 @@
-### Release v1.3.0+11
-Download the latest version: ([app-release-1.3.0+11.apk](/assets/apks/app-release-1.3.0+11.apk))
+### Release v1.3.1+12
+Download the latest version: ([app-release-1.3.1+12.apk](/assets/apks/app-release-1.3.1+12.apk))
 
-Adding ability to download posts.
+Minor fix to post cards so that circular progress indicator always aligns with video icon
 
-This is currently not fully optimized — more improvements coming soon.
-
+Favorite posts/creators are now more easily visible on UI
+*1.3.0* : Adding ability to download posts
+This is currently not fully optimized more improvements coming soon
+*1.2.2* : Improved state management in favorite posts view
+If you are in this view and navigate into a post to unlike it navigate back will show an immediately refreshed favorite post view
+Favorite creator sorting by "last favorited" no longer broken
+*1.2.1* : Improved state management in creator screen & auto update change
+If in creator screen and you view a creator post while logged in and liked that post then navigate back to creator screen the tint should be directly reflected
+*1.2.0* : Add/remove favorite posts/creator when user is logged in
+*1.1.0* : Identify favorite creators/posts across app when logged in
+*1.0.72* : Standardized creator card across app
+*1.0.71* : Initial steps to show favorite creators/posts
+*1.0.7* : Always show  latest version in about , improved popular posts screen, implemented favorite posts screen
+*1.0.6* : Added a settings screen that has about app, changelog and login preferences.
+*1.0.5* : Add Ability to go see favorite Creators/Posts. Initial Logic for creator code implemented but more understanding is needed around how to get a`post_id`, and added support for most common video extensions.
+*1.0.4* : Additional code rework, gallery view for non video files in a post and add swipe indicator for gallery.
+*1.0.3* : Major code refactor, use bottom navigation in favorite creator view.
+*1.0.2* : Match device theme(to support dark theme), launcher icon.
+*1.0.1* : Apk test on real device (requires internet permission), sort favorite creators, showing thumbnails.
+*1.0.0* : Initial Version
