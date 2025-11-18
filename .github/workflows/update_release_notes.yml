@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - '_includes/changelog.md'
+  workflow_dispatch:
 
 jobs:
   update:
