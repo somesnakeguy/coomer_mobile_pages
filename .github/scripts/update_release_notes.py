@@ -47,7 +47,7 @@ def main():
     else:
         apk_basename = f"app-release-{version}.apk"
         header = f"### Release v{version}"
-        link = f"/assets/apks/{apk_basename}"
+        link = f"https://github.com/somesnakeguy/coomer_mobile_pages/raw/refs/heads/main/assets/apks/{apk_basename}"
 
     # Extract the main summary (first line) and bullet points
     lines = content.split('\n')
