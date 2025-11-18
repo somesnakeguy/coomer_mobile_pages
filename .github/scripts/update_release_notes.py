@@ -72,6 +72,7 @@ def main():
         parts.append(header)
         parts.append(f"Download the latest version: ([{apk_basename}]({link}))")
     if summary:
+        parts.append("")
         parts.append(summary)
     if details:
         parts.append("")
