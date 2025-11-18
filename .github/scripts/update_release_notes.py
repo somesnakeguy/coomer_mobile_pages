@@ -23,7 +23,7 @@ def main():
     summary = None
     idx = None
     for i, line in enumerate(lines):
-        m = re.match(r"^- \*([^*]+)\*:\s*(.+)", line)
+        m = re.match(r"^- \*([^*]+)\*\s*:\s*(.+)", line)
         if m:
             version = m.group(1).strip()
             summary = m.group(2).strip()
