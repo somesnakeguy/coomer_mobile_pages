@@ -1,12 +1,14 @@
 # Changelog
 
-- *1.3.0*: Adding ability to download posts
-  - This is currently not fully optimized more improvements coming soon
+- *1.3.1* : Minor fix to post cards so that circular progress indicator always aligns with video icon
+    - Favorite posts/creators are now more easily visible on UI
+- *1.3.0* : Adding ability to download posts
+    - This is currently not fully optimized more improvements coming soon
 - *1.2.2* : Improved state management in favorite posts view
-  - If you are in this view and navigate into a post to unlike it navigate back will show an immediately refreshed favorite post view
-  - Favorite creator sorting by "last favorited" no longer broken
+    - If you are in this view and navigate into a post to unlike it navigate back will show an immediately refreshed favorite post view
+    - Favorite creator sorting by "last favorited" no longer broken
 - *1.2.1* : Improved state management in creator screen & auto update change
-  - If in creator screen and you view a creator post while logged in and liked that post then navigate back to creator screen the tint should be directly reflected 
+    - If in creator screen and you view a creator post while logged in and liked that post then navigate back to creator screen the tint should be directly reflected
 - *1.2.0* : Add/remove favorite posts/creator when user is logged in
 - *1.1.0* : Identify favorite creators/posts across app when logged in
 - *1.0.72* : Standardized creator card across app
