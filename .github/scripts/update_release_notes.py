@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 def main():
-    repo_root = Path(__file__).resolve().parents[3]
+    repo_root = Path(__file__).resolve().parents[2]
     changelog = repo_root / "_includes" / "changelog.md"
     release_notes = repo_root / "_includes" / "release_notes.md"
     apks_dir = repo_root / "assets" / "apks"
