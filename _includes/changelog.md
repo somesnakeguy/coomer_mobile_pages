@@ -1,5 +1,10 @@
 # Changelog
 
+- *1.4.0*: Added Ability to navigate to next/previous post
+- *1.3.3* :  Added ability to go to creator if in a post
+  - This is only from "popular posts" screen or favorite posts view
+- *1.3.2* : Change bottom navigation so that login screen is first
+  - Also fixed favorite post state management bug where list was being cleared if app is in background
 - *1.3.1* : Minor fix to post cards so that circular progress indicator always aligns with video icon
     - Favorite posts/creators are now more easily visible on UI
 - *1.3.0* : Adding ability to download posts
