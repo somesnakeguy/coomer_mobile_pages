@@ -1,6 +1,8 @@
 # Changelog
 
-- *1.4.0*: Added Ability to navigate to next/previous post
+- *1.4.1* : Cancel download from notification
+  - Optimization to fetching video thumbnail and duration
+- *1.4.0* : Added Ability to navigate to next/previous post
 - *1.3.3* :  Added ability to go to creator if in a post
   - This is only from "popular posts" screen or favorite posts view
 - *1.3.2* : Change bottom navigation so that login screen is first
