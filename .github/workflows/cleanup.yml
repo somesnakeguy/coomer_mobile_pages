@@ -2,7 +2,7 @@ name: Cleanup old workflow runs
 
 on:
   workflow_run:
-    workflows: ["Process pushed APK and release notes"]
+    workflows: ["Deploy Jekyll with GitHub Pages dependencies preinstalled"]
     types:
       - completed
       - failure
