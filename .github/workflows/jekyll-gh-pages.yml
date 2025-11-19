@@ -2,11 +2,9 @@
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 on:
-  # Runs on pushes targeting the default branch
   workflow_run:
     workflows: ["Update Release Notes from Changelog"]
-  types:
-    - completed
+    types: [completed]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
