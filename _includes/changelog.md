@@ -1,5 +1,6 @@
 # Changelog
 
+- *1.4.11* : Fixed creator card view
 - *1.4.1* : Cancel download from notification
   - Optimization to fetching video thumbnail and duration
 - *1.4.0* : Added Ability to navigate to next/previous post
