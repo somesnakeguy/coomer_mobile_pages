@@ -1,4 +1,6 @@
-### Release v1.4.0+13
-Download the latest version: ([app-release-1.4.0+13.apk](https://github.com/somesnakeguy/coomer_mobile_pages/raw/refs/heads/main/assets/apks/app-release-1.4.0+13.apk))
+### Release v1.4.1+14
+Download the latest version: ([app-release-1.4.1+14.apk](https://github.com/somesnakeguy/coomer_mobile_pages/raw/refs/heads/main/assets/apks/app-release-1.4.1+14.apk))
 
-Added Ability to navigate to next/previous post
+Cancel download from notification
+
+Optimization to fetching video thumbnail and duration
