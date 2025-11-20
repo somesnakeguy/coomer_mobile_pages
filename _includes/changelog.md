@@ -1,5 +1,7 @@
 # Changelog
 
+- *1.4.2* : Completely reworked how file links are fetched
+  - This will help with video downloads, slow/no file loading(Needs more testing).
 - *1.4.11* : Fixed creator card view
 - *1.4.1* : Cancel download from notification
   - Optimization to fetching video thumbnail and duration
