@@ -5,3 +5,6 @@ minima:
   skin: dark 
 title: Coomer Mobile Pages
 description: A github pages site for Coomer Mobile
+header_pages:
+  - index.md
+  - _includes\changelog.md
