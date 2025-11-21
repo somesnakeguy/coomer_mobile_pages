@@ -75,8 +75,11 @@ def main():
         parts.append("")
         parts.append(summary)
     if details:
-        parts.append("")
-        parts.extend(details)
+        if(len(details)>1):
+            for lineDetail in details:
+                parts.append('* ' + lineDetail)                  
+        else:    
+            parts.extend('* ' + details)
 
     new_content = "\n".join(parts).strip() + "\n"
 
@@ -88,46 +91,46 @@ def main():
     release_notes.write_text(new_content, encoding="utf-8")
     print(f"Wrote updated release notes to {release_notes}")
 
-    # Configure git with the token
-    github_token = os.environ.get("GITHUB_TOKEN")
-    if not github_token:
-        print("GITHUB_TOKEN not found in environment", file=sys.stderr)
-        sys.exit(1)
+    # # Configure git with the token
+    # github_token = os.environ.get("GITHUB_TOKEN")
+    # if not github_token:
+    #     print("GITHUB_TOKEN not found in environment", file=sys.stderr)
+    #     sys.exit(1)
 
-    # Get the remote URL and add authentication
-    remote_url = subprocess.run(
-        ["git", "config", "remote.origin.url"],
-        capture_output=True, text=True, check=True
-    ).stdout.strip()
+    # # Get the remote URL and add authentication
+    # remote_url = subprocess.run(
+    #     ["git", "config", "remote.origin.url"],
+    #     capture_output=True, text=True, check=True
+    # ).stdout.strip()
 
-    # Add authentication to remote URL
-    auth_remote_url = remote_url.replace(
-        'https://github.com/',
-        f'https://x-access-token:{github_token}@github.com/'
-    )
+    # # Add authentication to remote URL
+    # auth_remote_url = remote_url.replace(
+    #     'https://github.com/',
+    #     f'https://x-access-token:{github_token}@github.com/'
+    # )
 
-    # Set up git configuration
-    subprocess.run(["git", "config", "user.name", "github-actions[bot]"], check=True)
-    subprocess.run(["git", "config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com"], check=True)
+    # # Set up git configuration
+    # subprocess.run(["git", "config", "user.name", "github-actions[bot]"], check=True)
+    # subprocess.run(["git", "config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com"], check=True)
     
-    # Update remote URL with authentication
-    subprocess.run(["git", "remote", "set-url", "origin", auth_remote_url], check=True)
+    # # Update remote URL with authentication
+    # subprocess.run(["git", "remote", "set-url", "origin", auth_remote_url], check=True)
 
-    # Add, commit, and push
-    subprocess.run(["git", "add", str(release_notes)], check=True)
-    commit_msg = f"chore: update release notes to v{version}"
-    subprocess.run(["git", "commit", "-m", commit_msg], check=True)
+    # # Add, commit, and push
+    # subprocess.run(["git", "add", str(release_notes)], check=True)
+    # commit_msg = f"chore: update release notes to v{version}"
+    # subprocess.run(["git", "commit", "-m", commit_msg], check=True)
 
-    # Get current branch
-    ref = os.environ.get("GITHUB_REF", "refs/heads/main")
-    if ref.startswith("refs/heads/"):
-        branch = ref.replace("refs/heads/", "")
-    else:
-        branch = "main"
+    # # Get current branch
+    # ref = os.environ.get("GITHUB_REF", "refs/heads/main")
+    # if ref.startswith("refs/heads/"):
+    #     branch = ref.replace("refs/heads/", "")
+    # else:
+    #     branch = "main"
 
-    # Push using the authenticated remote
-    subprocess.run(["git", "push", "origin", f"HEAD:{branch}"], check=True)
-    print("Committed and pushed updated release notes.")
+    # # Push using the authenticated remote
+    # subprocess.run(["git", "push", "origin", f"HEAD:{branch}"], check=True)
+    # print("Committed and pushed updated release notes.")
 
 
 if __name__ == "__main__":
