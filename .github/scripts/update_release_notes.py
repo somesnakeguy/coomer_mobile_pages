@@ -75,11 +75,8 @@ def main():
         parts.append("")
         parts.append(summary)
     if details:
-        if(len(details)>1):
-            for lineDetail in details:
-                parts.append('* ' + lineDetail)                  
-        else:    
-            parts.extend('* ' + details)
+        for lineDetail in details:
+                parts.append('* ' + lineDetail)
 
     new_content = "\n".join(parts).strip() + "\n"
 
