@@ -1,3 +1,9 @@
+# Changelog
+
+- *1.4.92* : Added ability to download images
+  - Download state management may still be unstable, non-optimal
+- *1.4.91* : Updated Posts screen to be able to view recent and popular posts
+  - Popular posts can view popular posts for past day, week and month
 - *1.4.9* : Fixed file downloaded and implemented download manager (not fully functional)
   - File download works very well if left alone
   - Managing download state (pause/resume, cancel) is still broken and needs a lot of work; but will publish this as an "alpha"
