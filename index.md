@@ -15,3 +15,11 @@ The app is currently mostly stable but may have bugs here or there.
 ## Release Notes
 
 {% include release_notes.md %}
+
+---
+layout: default
+title: Changelog
+permalink: /Change Log/
+---
+
+{% include changelog.md %}
