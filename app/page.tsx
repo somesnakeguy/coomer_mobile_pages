@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-zinc-50 font-sans dark:bg-black">
       <div className="flex flex-col relative">
-        <div style={{ fontSize: "30px", marginTop: "10px" }}>
+        <div style={{ fontSize: "30px", fontWeight: "400", lineHeight: "45px", marginTop: "10px" }}>
           <h1>Welcome to Coomer Mobile Site</h1>
         </div>
       </div>
@@ -28,7 +28,7 @@ export default function Home() {
         </p>
         <p>
           The website will be used to distribute and document the apk but the
-          apk source code will remain in a private repo
+          apk source code will remain in a private repo.
         </p>
       </div>
       <div className="flex items-center justify-center min-h-[941px] bg-black" />
