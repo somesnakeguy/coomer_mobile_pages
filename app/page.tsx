@@ -15,7 +15,7 @@ export default function Home() {
           position: "relative",
           height: "auto",
           fontSize: "20px",
-          margin: "30px auto 0 0",
+          margin: "30px auto 0 30px",
         }}
       >
         <p>
