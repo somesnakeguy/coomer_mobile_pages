@@ -117,16 +117,39 @@ export default function Home() {
             >
               {releaseData.current.version}
             </p>
-            <p
+            <div
               style={{
-                margin: "0",
-                fontSize: "16px",
                 fontWeight: "400",
-                lineHeight: "24px",
               }}
             >
-              {releaseData.current.releaseNotes}
-            </p>
+              <p
+                style={{
+                  margin: "0 0 8px 0",
+                  fontSize: "16px",
+                  fontWeight: "400",
+                  lineHeight: "24px",
+                }}
+              >
+                {releaseData.current.releaseSummary}
+              </p>
+              {releaseData.current.releaseNotes.length > 0 && (
+                <ul
+                  style={{
+                    margin: "0",
+                    paddingLeft: "20px",
+                    fontSize: "16px",
+                    fontWeight: "400",
+                    lineHeight: "24px",
+                  }}
+                >
+                  {releaseData.current.releaseNotes.map((note, index) => (
+                    <li key={index} style={{ textIndent: "1em" }}>
+                      {note}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
             <p
               style={{
                 margin: "8px 0 0 0",
