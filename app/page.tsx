@@ -5,14 +5,16 @@ import { useState, useEffect } from "react";
 interface ReleaseData {
   current: {
     version: string;
-    releaseNotes: string;
+    releaseSummary: string;
+    releaseNotes: string[];
     apkUrl: string;
     releaseDate: string;
   };
   changelog: Array<{
     version: string;
     date: string;
-    notes: string;
+    summary: string;
+    notes: string[];
   }>;
 }
 
