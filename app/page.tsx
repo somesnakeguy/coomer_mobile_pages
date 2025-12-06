@@ -101,7 +101,7 @@ export default function Home() {
               flexDirection: "column",
               gap: "12px",
               padding: "16px",
-              backgroundColor: "#f5f5f5",
+              backgroundColor: "rgba(0, 0, 0, 1)",
               borderRadius: "8px",
               marginBottom: "20px",
             }}
@@ -142,7 +142,7 @@ export default function Home() {
               padding: "12px 24px",
               fontSize: "16px",
               fontWeight: "600",
-              backgroundColor: "#000",
+              backgroundColor: "rgba(65, 117, 5, 1)",
               color: "#fff",
               border: "none",
               borderRadius: "6px",
@@ -150,10 +150,10 @@ export default function Home() {
               transition: "background-color 0.2s",
             }}
             onMouseEnter={(e) => {
-              (e.target as HTMLButtonElement).style.backgroundColor = "#333";
+              (e.target as HTMLButtonElement).style.backgroundColor = "rgba(85, 137, 5, 1)";
             }}
             onMouseLeave={(e) => {
-              (e.target as HTMLButtonElement).style.backgroundColor = "#000";
+              (e.target as HTMLButtonElement).style.backgroundColor = "rgba(65, 117, 5, 1)";
             }}
           >
             Download APK
