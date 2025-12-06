@@ -1,7 +1,10 @@
 {
   "current": {
     "version": "v1.4.92",
-    "releaseNotes": "Added ability to download images. Download state management may still be unstable, non-optimal",
+    "releaseSummary": "Added ability to download images.",
+    "releaseNotes": [
+      "Download state management may still be unstable, non-optimal"
+    ],
     "apkUrl": "https://github.com/somesnakeguy/coomer_mobile/releases/download/v1.4.92%2B18/app-release-1.4.92+18.apk",
     "releaseDate": "2024-01-15"
   },
@@ -9,17 +12,20 @@
     {
       "version": "v1.4.92",
       "date": "2024-01-15",
-      "notes": "Added ability to download images. Download state management may still be unstable, non-optimal"
+      "summary": "Added ability to download images.",
+      "notes": ["Download state management may still be unstable, non-optimal"]
     },
     {
       "version": "v1.4.91",
       "date": "2024-01-10",
-      "notes": "Bug fixes and performance improvements"
+      "summary": "Bug fixes and performance improvements",
+      "notes": []
     },
     {
       "version": "v1.4.90",
       "date": "2024-01-05",
-      "notes": "Initial release"
+      "summary": "Initial release",
+      "notes": []
     }
   ]
 }
