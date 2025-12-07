@@ -25,39 +25,13 @@ export default function Home() {
   useEffect(() => {
     const fetchReleaseData = async () => {
     try {
-      console.log('Fetching release data...');
-      console.log('Current pathname:', window.location.pathname);
-      console.log('Full URL:', window.location.href);
-      
       // Try different approaches - test which one works
-      const urlsToTry = [
-        './releases.json',
-        'releases.json',
-        '/coomer_mobile_pages/releases.json',
-        `${window.location.origin}/coomer_mobile_pages/releases.json`
-      ];
+      const basePath = process.env.NODE_ENV === 'production' ? '/coomer_mobile_pages' : '';
+      const response = await fetch(`${basePath}/releases.json`);
       
-      let data = null;
-      for (const url of urlsToTry) {
-        try {
-          console.log(`Trying URL: ${url}`);
-          const response = await fetch(url);
-          if (response.ok) {
-            data = await response.json();
-            console.log(`Success with URL: ${url}`);
-            break;
-          }
-        } catch (err) {
-          console.log(`Failed with URL: ${url}:`, err);
-        }
-      }
+      const data = await response.json();
+      setReleaseData(data);
       
-      if (data) {
-        setReleaseData(data);
-        console.log('Release data loaded:', data);
-      } else {
-        console.error('All fetch attempts failed');
-      }
     } catch (error) {
       console.error("Failed to load release data:", error);
     } finally {
