@@ -1,45 +1,28 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { fetchReleaseData } from "@/utils/fetchReleaseData";
+import { ReleaseData } from '@/types/release';
 
-interface ReleaseData {
-  current: {
-    version: string;
-    releaseSummary: string;
-    releaseNotes: string[];
-    apkUrl: string;
-    releaseDate: string;
-  };
-  changelog: Array<{
-    version: string;
-    date: string;
-    summary: string;
-    notes: string[];
-  }>;
-}
 
 export default function Home() {
   const [releaseData, setReleaseData] = useState<ReleaseData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const fetchReleaseData = async () => {
-    try {
-      // Try different approaches - test which one works
-      const basePath = process.env.NODE_ENV === 'production' ? '/coomer_mobile_pages' : '';
-      const response = await fetch(`${basePath}/releases.json`);
-      
-      const data = await response.json();
-      setReleaseData(data);
-      
-    } catch (error) {
-      console.error("Failed to load release data:", error);
-    } finally {
-      setIsLoading(false);
-    }
-  };
 
-    fetchReleaseData();
+    const loadData = async () => {
+      try {
+        const data = await fetchReleaseData();
+        setReleaseData(data);
+      } catch (error) {
+        console.error("Failed to load release data:", error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    loadData();
   }, []);
 
   const handleDownloadAPK = () => {

@@ -1,34 +1,17 @@
 "use client";
 
 import { useState, useEffect } from "react";
-
-interface ReleaseEntry {
-  version: string;
-  date: string;
-  summary: string;
-  notes: string[];
-}
-
-interface ReleaseData {
-  current: {
-    version: string;
-    releaseSummary: string;
-    releaseNotes: string[];
-    apkUrl: string;
-    releaseDate: string;
-  };
-  changelog: ReleaseEntry[];
-}
+import { fetchReleaseData } from "@/utils/fetchReleaseData";
+import { ReleaseData } from '@/types/release';
 
 export default function ChangelogPage() {
   const [releaseData, setReleaseData] = useState<ReleaseData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const fetchReleaseData = async () => {
+    const loadData = async () => {
       try {
-        const response = await fetch("/releases.json");
-        const data = await response.json();
+        const data = await fetchReleaseData();
         setReleaseData(data);
       } catch (error) {
         console.error("Failed to load release data:", error);
@@ -37,9 +20,8 @@ export default function ChangelogPage() {
       }
     };
 
-    fetchReleaseData();
+    loadData();
   }, []);
-
   if (isLoading) {
     return (
       <div className="changelog-loading">
