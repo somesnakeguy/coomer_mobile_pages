@@ -7,6 +7,7 @@ const nextConfig = withBuilderDevTools({
   images: {
     unoptimized: true, // Required for static export
   },
+  trailingSlash: true,
 });
 
 module.exports = nextConfig;
