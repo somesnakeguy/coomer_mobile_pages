@@ -42,13 +42,13 @@ export default function Header() {
         .nav-link {
           display: flex;
           align-items: center;
-          padding: 16px 0;
+          padding: 16px 12px;
           font-size: 16px;
           font-weight: 500;
           color: rgba(255, 255, 255, 0.6);
           text-decoration: none;
-          border-bottom: 2px solid transparent;
           transition: all 0.2s ease;
+          border-radius: 4px;
         }
 
         .nav-link:hover {
@@ -57,7 +57,14 @@ export default function Header() {
 
         .nav-link-active {
           color: rgba(255, 255, 255, 1);
-          border-bottom-color: rgba(65, 117, 5, 1);
+          background-color: rgba(34, 197, 94, 1);
+        }
+
+        .tab-separator {
+          width: 1px;
+          height: 24px;
+          background-color: rgba(255, 255, 255, 0.2);
+          margin: 0 8px;
         }
 
         @media (max-width: 768px) {
