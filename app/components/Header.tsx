@@ -11,63 +11,137 @@ export default function Header() {
 
   return (
     <header className="top-nav-header">
-      <nav className="nav-container">
-        <Link href="/" className={`nav-link ${isHomeActive ? "nav-link-active" : ""}`}>
-          Home
-        </Link>
-        <Link href="/changelog" className={`nav-link ${isChangelogActive ? "nav-link-active" : ""}`}>
-          Changelog
-        </Link>
-      </nav>
+      <div className="header-content">
+        <Link href="/" className="logo-link" />
+        <nav className="nav-container">
+          <Link
+            href="/"
+            className={`nav-link ${isHomeActive ? "nav-link-active" : ""}`}
+          >
+            <p>
+              <div style={{ display: "inline", color: "rgb(0, 0, 0)" }}>Home</div>
+            </p>
+          </Link>
+          <Link
+            href="/changelog"
+            className={`nav-link ${isChangelogActive ? "nav-link-active" : ""}`}
+          >
+            <p>
+              <div style={{ display: "inline", color: "rgb(0, 0, 0)" }}>Changelog</div>
+            </p>
+          </Link>
+        </nav>
+      </div>
       <style jsx>{`
         .top-nav-header {
-          background-color: rgba(0, 0, 0, 0.8);
-          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          background-color: #ffffff;
+          border-bottom: 2px solid #d0d0d0;
           padding: 0;
           position: sticky;
           top: 0;
           z-index: 100;
-          backdrop-filter: blur(8px);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        }
+
+        .header-content {
+          display: flex;
+          width: 100%;
+          max-width: 1400px;
+          margin: 0 auto;
+          padding: 0 40px;
+          align-items: center;
+          justify-content: space-between;
+          height: 70px;
+        }
+
+        .logo-link {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          flex-shrink: 0;
         }
 
         .nav-container {
           display: flex;
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 0 20px;
           gap: 40px;
+          align-items: center;
+          flex-shrink: 0;
+          justify-content: center;
+          margin: 0 auto;
         }
 
         .nav-link {
-          display: flex;
-          align-items: center;
-          padding: 16px 0;
-          font-size: 16px;
-          font-weight: 500;
-          color: rgba(255, 255, 255, 0.6);
+          font-size: 15px;
+          font-weight: 600;
+          color: #000000;
           text-decoration: none;
-          border-bottom: 2px solid transparent;
           transition: all 0.2s ease;
+          position: relative;
+          padding: 8px 12px;
+          cursor: pointer;
+          white-space: nowrap;
+          display: inline-block;
+          border-radius: 4px;
+        }
+
+        .nav-link p {
+          margin: 0;
+          padding: 0;
+          font-size: 15px;
+          font-weight: 400;
+          display: inline;
+        }
+
+        .nav-link div {
+          display: inline;
+          color: rgb(0, 0, 0);
+          font-weight: 400;
         }
 
         .nav-link:hover {
-          color: rgba(255, 255, 255, 1);
+          color: #333;
+        }
+
+        .nav-link:hover div {
+          color: #333;
         }
 
         .nav-link-active {
-          color: rgba(255, 255, 255, 1);
-          border-bottom-color: rgba(65, 117, 5, 1);
+          color: #000000;
+          font-weight: 400;
+        }
+
+        .nav-link-active div {
+          color: rgb(0, 0, 0);
+          font-weight: 400;
+        }
+
+        .nav-link-active::after {
+          content: '';
+          position: absolute;
+          bottom: -10px;
+          left: 0;
+          right: 0;
+          height: 3px;
+          background-color: rgba(65, 117, 5, 1);
         }
 
         @media (max-width: 768px) {
+          .header-content {
+            padding: 0 20px;
+            height: 60px;
+          }
+
+          .logo {
+            font-size: 16px;
+          }
+
           .nav-container {
-            gap: 20px;
-            padding: 0 16px;
+            gap: 24px;
           }
 
           .nav-link {
-            padding: 12px 0;
-            font-size: 14px;
+            font-size: 13px;
           }
         }
       `}</style>
