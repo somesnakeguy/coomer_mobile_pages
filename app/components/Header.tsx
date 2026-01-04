@@ -15,6 +15,7 @@ export default function Header() {
         <Link href="/" className={`nav-link ${isHomeActive ? "nav-link-active" : ""}`}>
           Home
         </Link>
+        <div className="tab-separator" />
         <Link href="/changelog" className={`nav-link ${isChangelogActive ? "nav-link-active" : ""}`}>
           Changelog
         </Link>
