@@ -57,7 +57,7 @@ export default function Header() {
 
         .nav-link-active {
           color: rgba(255, 255, 255, 1);
-          background-color: rgba(34, 197, 94, 1);
+          background-color: #22c55e;
         }
 
         .tab-separator {
