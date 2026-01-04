@@ -69,13 +69,18 @@ export default function Header() {
 
         @media (max-width: 768px) {
           .nav-container {
-            gap: 20px;
+            gap: 0;
             padding: 0 16px;
           }
 
           .nav-link {
-            padding: 12px 0;
+            padding: 12px 10px;
             font-size: 14px;
+          }
+
+          .tab-separator {
+            height: 20px;
+            margin: 0 6px;
           }
         }
       `}</style>
