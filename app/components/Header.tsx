@@ -89,13 +89,13 @@ export default function Header() {
           }
 
           .nav-link {
-            padding: 12px 10px;
+            padding: 12px 16px;
             font-size: 14px;
           }
 
           .tab-separator {
             height: 20px;
-            margin: 0 6px;
+            margin: 0;
           }
         }
       `}</style>
