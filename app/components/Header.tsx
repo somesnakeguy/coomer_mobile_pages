@@ -74,6 +74,8 @@ export default function Header() {
           gap: 40px;
           align-items: center;
           flex-shrink: 0;
+          justify-content: center;
+          margin: 0 auto;
         }
 
         .nav-link {
