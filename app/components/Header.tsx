@@ -79,7 +79,7 @@ export default function Header() {
           width: 1px;
           height: 24px;
           background-color: rgba(255, 255, 255, 0.2);
-          margin: 0 8px;
+          margin: 0;
         }
 
         @media (max-width: 768px) {
