@@ -11,29 +11,23 @@ export default function Header() {
 
   return (
     <header className="top-nav-header">
-      <nav className="nav-container">
-        <Link
-          href="/"
-          className="nav-link"
-          style={isHomeActive ? {
-            backgroundColor: "rgba(65, 117, 5, 1)",
-            color: "rgba(255, 255, 255, 1)"
-          } : {}}
-        >
-          Home
-        </Link>
-        <div className="tab-separator" />
-        <Link
-          href="/changelog"
-          className="nav-link"
-          style={isChangelogActive ? {
-            backgroundColor: "rgba(65, 117, 5, 1)",
-            color: "rgba(255, 255, 255, 1)"
-          } : {}}
-        >
-          Changelog
-        </Link>
-      </nav>
+      <div className="header-content">
+        <div className="logo">Coomer</div>
+        <nav className="nav-container">
+          <Link
+            href="/"
+            className={`nav-link ${isHomeActive ? "nav-link-active" : ""}`}
+          >
+            Home
+          </Link>
+          <Link
+            href="/changelog"
+            className={`nav-link ${isChangelogActive ? "nav-link-active" : ""}`}
+          >
+            Changelog
+          </Link>
+        </nav>
+      </div>
       <style jsx>{`
         .top-nav-header {
           background-color: rgba(0, 0, 0, 0.8);
