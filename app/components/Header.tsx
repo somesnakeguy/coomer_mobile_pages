@@ -77,15 +77,15 @@ export default function Header() {
 
         .tab-separator {
           width: 1px;
-          height: 24px;
-          background-color: rgba(255, 255, 255, 0.2);
+          height: 32px;
+          background-color: rgba(255, 255, 255, 0.3);
           margin: 0;
         }
 
         @media (max-width: 768px) {
           .nav-container {
-            gap: 0;
-            padding: 0 16px;
+            gap: 6px;
+            padding: 6px 16px;
           }
 
           .nav-link {
@@ -94,7 +94,7 @@ export default function Header() {
           }
 
           .tab-separator {
-            height: 20px;
+            height: 24px;
             margin: 0;
           }
         }
