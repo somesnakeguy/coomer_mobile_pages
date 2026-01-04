@@ -20,13 +20,17 @@ export default function Header() {
             href="/"
             className={`nav-link ${isHomeActive ? "nav-link-active" : ""}`}
           >
-            Home
+            <p>
+              <span style={{ color: "rgb(0, 0, 0)" }}>Home</span>
+            </p>
           </Link>
           <Link
             href="/changelog"
             className={`nav-link ${isChangelogActive ? "nav-link-active" : ""}`}
           >
-            Changelog
+            <p>
+              <span style={{ color: "rgb(0, 0, 0)" }}>Changelog</span>
+            </p>
           </Link>
         </nav>
       </div>
