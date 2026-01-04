@@ -12,16 +12,14 @@ export default function Header() {
   return (
     <header className="top-nav-header">
       <div className="header-content">
-        <Link href="/" className="logo-link">
-          <div className="logo">Coomer</div>
-        </Link>
+        <Link href="/" className="logo-link" />
         <nav className="nav-container">
           <Link
             href="/"
             className={`nav-link ${isHomeActive ? "nav-link-active" : ""}`}
           >
             <p>
-              <span style={{ color: "rgb(0, 0, 0)" }}>Home</span>
+              <div style={{ display: "inline", color: "rgb(0, 0, 0)" }}>Home</div>
             </p>
           </Link>
           <Link
@@ -29,7 +27,7 @@ export default function Header() {
             className={`nav-link ${isChangelogActive ? "nav-link-active" : ""}`}
           >
             <p>
-              <span style={{ color: "rgb(0, 0, 0)" }}>Changelog</span>
+              <div style={{ display: "inline", color: "rgb(0, 0, 0)" }}>Changelog</div>
             </p>
           </Link>
         </nav>
