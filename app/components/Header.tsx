@@ -30,66 +30,85 @@ export default function Header() {
       </div>
       <style jsx>{`
         .top-nav-header {
-          background-color: rgba(0, 0, 0, 0.8);
-          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          background-color: #ffffff;
+          border-bottom: 1px solid #e5e5e5;
           padding: 0;
           position: sticky;
           top: 0;
           z-index: 100;
-          backdrop-filter: blur(8px);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        }
+
+        .header-content {
+          display: flex;
+          max-width: 1400px;
+          margin: 0 auto;
+          padding: 0 40px;
+          align-items: center;
+          justify-content: space-between;
+          height: 70px;
+        }
+
+        .logo {
+          font-size: 20px;
+          font-weight: 700;
+          color: #000;
+          letter-spacing: -0.5px;
+          flex-shrink: 0;
         }
 
         .nav-container {
           display: flex;
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 8px 20px;
-          gap: 8px;
+          gap: 40px;
           align-items: center;
+          margin-left: auto;
         }
 
         .nav-link {
-          display: flex;
-          align-items: center;
-          padding: 16px 24px;
-          font-size: 16px;
+          font-size: 14px;
           font-weight: 500;
-          color: rgba(255, 255, 255, 0.6);
+          color: #666;
           text-decoration: none;
-          transition: all 0.2s ease;
-          border-radius: 0;
+          transition: color 0.2s ease;
+          position: relative;
+          padding: 0;
         }
 
         .nav-link:hover {
-          color: rgba(255, 255, 255, 1);
+          color: #000;
         }
 
         .nav-link-active {
-          color: rgba(255, 255, 255, 1);
-          background-color: #22c55e;
+          color: #000;
+          font-weight: 600;
         }
 
-        .tab-separator {
-          width: 1px;
-          height: 32px;
-          background-color: rgba(255, 255, 255, 0.3);
-          margin: 0;
+        .nav-link-active::after {
+          content: '';
+          position: absolute;
+          bottom: -8px;
+          left: 0;
+          right: 0;
+          height: 2px;
+          background-color: rgba(65, 117, 5, 1);
         }
 
         @media (max-width: 768px) {
+          .header-content {
+            padding: 0 20px;
+            height: 60px;
+          }
+
+          .logo {
+            font-size: 16px;
+          }
+
           .nav-container {
-            gap: 6px;
-            padding: 6px 16px;
+            gap: 24px;
           }
 
           .nav-link {
-            padding: 12px 16px;
-            font-size: 14px;
-          }
-
-          .tab-separator {
-            height: 24px;
-            margin: 0;
+            font-size: 13px;
           }
         }
       `}</style>
