@@ -33,12 +33,12 @@ export default function Header() {
       <style jsx>{`
         .top-nav-header {
           background-color: #ffffff;
-          border-bottom: 1px solid #e5e5e5;
+          border-bottom: 2px solid #d0d0d0;
           padding: 0;
           position: sticky;
           top: 0;
           z-index: 100;
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
         }
 
         .header-content {
