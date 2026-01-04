@@ -50,19 +50,20 @@ export default function Header() {
           max-width: 1200px;
           margin: 0 auto;
           padding: 0 20px;
-          gap: 40px;
+          gap: 0;
+          align-items: stretch;
         }
 
         .nav-link {
           display: flex;
           align-items: center;
-          padding: 16px 12px;
+          padding: 16px 24px;
           font-size: 16px;
           font-weight: 500;
           color: rgba(255, 255, 255, 0.6);
           text-decoration: none;
           transition: all 0.2s ease;
-          border-radius: 4px;
+          border-radius: 0;
         }
 
         .nav-link:hover {
