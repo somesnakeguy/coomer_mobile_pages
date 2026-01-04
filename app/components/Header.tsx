@@ -12,7 +12,9 @@ export default function Header() {
   return (
     <header className="top-nav-header">
       <div className="header-content">
-        <div className="logo">Coomer</div>
+        <Link href="/" className="logo-link">
+          <div className="logo">Coomer</div>
+        </Link>
         <nav className="nav-container">
           <Link
             href="/"
