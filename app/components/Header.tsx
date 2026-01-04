@@ -16,7 +16,7 @@ export default function Header() {
           href="/"
           className="nav-link"
           style={isHomeActive ? {
-            backgroundColor: "#22c55e",
+            backgroundColor: "rgba(65, 117, 5, 1)",
             color: "rgba(255, 255, 255, 1)"
           } : {}}
         >
@@ -27,7 +27,7 @@ export default function Header() {
           href="/changelog"
           className="nav-link"
           style={isChangelogActive ? {
-            backgroundColor: "#22c55e",
+            backgroundColor: "rgba(65, 117, 5, 1)",
             color: "rgba(255, 255, 255, 1)"
           } : {}}
         >
