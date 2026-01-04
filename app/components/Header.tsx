@@ -75,15 +75,16 @@ export default function Header() {
         }
 
         .nav-link {
-          font-size: 14px;
-          font-weight: 500;
-          color: #000;
+          font-size: 15px;
+          font-weight: 600;
+          color: #000000;
           text-decoration: none;
-          transition: color 0.2s ease;
+          transition: all 0.2s ease;
           position: relative;
-          padding: 8px 0;
+          padding: 10px 4px;
           cursor: pointer;
           white-space: nowrap;
+          display: inline-block;
         }
 
         .nav-link:hover {
@@ -91,17 +92,17 @@ export default function Header() {
         }
 
         .nav-link-active {
-          color: #000;
-          font-weight: 600;
+          color: #000000;
+          font-weight: 700;
         }
 
         .nav-link-active::after {
           content: '';
           position: absolute;
-          bottom: -8px;
+          bottom: -10px;
           left: 0;
           right: 0;
-          height: 2px;
+          height: 3px;
           background-color: rgba(65, 117, 5, 1);
         }
 
