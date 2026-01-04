@@ -61,14 +61,6 @@ export default function Header() {
           flex-shrink: 0;
         }
 
-        .logo {
-          font-size: 20px;
-          font-weight: 700;
-          color: #000;
-          letter-spacing: -0.5px;
-          cursor: pointer;
-        }
-
         .nav-container {
           display: flex;
           gap: 40px;
