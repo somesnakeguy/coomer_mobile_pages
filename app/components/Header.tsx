@@ -49,9 +49,9 @@ export default function Header() {
           display: flex;
           max-width: 1200px;
           margin: 0 auto;
-          padding: 0 20px;
-          gap: 0;
-          align-items: stretch;
+          padding: 8px 20px;
+          gap: 8px;
+          align-items: center;
         }
 
         .nav-link {
