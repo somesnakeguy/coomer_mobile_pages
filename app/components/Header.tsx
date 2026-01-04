@@ -81,10 +81,11 @@ export default function Header() {
           text-decoration: none;
           transition: all 0.2s ease;
           position: relative;
-          padding: 10px 4px;
+          padding: 8px 12px;
           cursor: pointer;
           white-space: nowrap;
           display: inline-block;
+          border-radius: 4px;
         }
 
         .nav-link:hover {
