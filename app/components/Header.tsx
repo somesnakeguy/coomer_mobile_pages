@@ -92,12 +92,34 @@ export default function Header() {
           border-radius: 4px;
         }
 
+        .nav-link p {
+          margin: 0;
+          padding: 0;
+          font-size: 15px;
+          font-weight: 600;
+          display: inline;
+        }
+
+        .nav-link span {
+          color: rgb(0, 0, 0);
+          font-weight: 600;
+        }
+
         .nav-link:hover {
+          color: #333;
+        }
+
+        .nav-link:hover span {
           color: #333;
         }
 
         .nav-link-active {
           color: #000000;
+          font-weight: 700;
+        }
+
+        .nav-link-active span {
+          color: rgb(0, 0, 0);
           font-weight: 700;
         }
 
