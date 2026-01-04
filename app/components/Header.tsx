@@ -77,7 +77,7 @@ export default function Header() {
         .nav-link {
           font-size: 14px;
           font-weight: 500;
-          color: #666;
+          color: #000;
           text-decoration: none;
           transition: color 0.2s ease;
           position: relative;
@@ -87,7 +87,7 @@ export default function Header() {
         }
 
         .nav-link:hover {
-          color: #000;
+          color: #333;
         }
 
         .nav-link-active {
