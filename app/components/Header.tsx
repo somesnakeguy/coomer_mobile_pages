@@ -96,31 +96,32 @@ export default function Header() {
           margin: 0;
           padding: 0;
           font-size: 15px;
-          font-weight: 600;
+          font-weight: 400;
           display: inline;
         }
 
-        .nav-link span {
+        .nav-link div {
+          display: inline;
           color: rgb(0, 0, 0);
-          font-weight: 600;
+          font-weight: 400;
         }
 
         .nav-link:hover {
           color: #333;
         }
 
-        .nav-link:hover span {
+        .nav-link:hover div {
           color: #333;
         }
 
         .nav-link-active {
           color: #000000;
-          font-weight: 700;
+          font-weight: 400;
         }
 
-        .nav-link-active span {
+        .nav-link-active div {
           color: rgb(0, 0, 0);
-          font-weight: 700;
+          font-weight: 400;
         }
 
         .nav-link-active::after {
