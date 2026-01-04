@@ -52,12 +52,18 @@ export default function Header() {
           height: 70px;
         }
 
+        .logo-link {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          flex-shrink: 0;
+        }
+
         .logo {
           font-size: 20px;
           font-weight: 700;
           color: #000;
           letter-spacing: -0.5px;
-          flex-shrink: 0;
           cursor: pointer;
         }
 
