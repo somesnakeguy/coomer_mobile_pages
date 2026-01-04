@@ -41,6 +41,7 @@ export default function Header() {
 
         .header-content {
           display: flex;
+          width: 100%;
           max-width: 1400px;
           margin: 0 auto;
           padding: 0 40px;
@@ -55,13 +56,14 @@ export default function Header() {
           color: #000;
           letter-spacing: -0.5px;
           flex-shrink: 0;
+          cursor: pointer;
         }
 
         .nav-container {
           display: flex;
           gap: 40px;
           align-items: center;
-          margin-left: auto;
+          flex-shrink: 0;
         }
 
         .nav-link {
@@ -71,7 +73,9 @@ export default function Header() {
           text-decoration: none;
           transition: color 0.2s ease;
           position: relative;
-          padding: 0;
+          padding: 8px 0;
+          cursor: pointer;
+          white-space: nowrap;
         }
 
         .nav-link:hover {
