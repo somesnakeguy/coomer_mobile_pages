@@ -1,0 +1,23 @@
+{
+  "title": "Known Issues and limitations",
+  "issues": [
+    {
+      "issue": "Download progress may be inaccurate at 99%+",
+      "notes": [
+        "This is because some time is needed to write the download file to the device so download may be stuck at 99%+"
+      ]
+    },
+    {
+      "issue": "Cannot view creator profile yet"
+    },
+    {
+      "issue": "Creator post count is not always visible when in \"Creator\" screen"
+    },
+    {
+      "issue": "Video Thumbnail fetching may be slow since my implementation searches for a \"viable thumbnail\"",
+      "notes": [
+        "A viable thumbnail is a non-black/dark as some videos start with a fade or may be in bad light conditions a good thumbnail may take time to be properly found."
+      ]
+    }
+  ]
+}
