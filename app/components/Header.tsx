@@ -2,12 +2,19 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
 
 export default function Header() {
   const pathname = usePathname();
+  const [isHomeActive, setIsHomeActive] = useState(false);
+  const [isChangelogActive, setIsChangelogActive] = useState(false);
+  const [isKnownIssuesActive, setIsKnownIssuesActive] = useState(false);
 
-  const isHomeActive = pathname === "/";
-  const isChangelogActive = pathname === "/changelog";
+  useEffect(() => {
+    setIsHomeActive(pathname === "/");
+    setIsChangelogActive(pathname === "/changelog");
+    setIsKnownIssuesActive(pathname === "/known-issues");
+  }, [pathname]);
 
   return (
     <header className="top-nav-header">
@@ -28,6 +35,14 @@ export default function Header() {
           >
             <p>
               <div style={{ display: "inline", color: "rgb(0, 0, 0)" }}>Changelog</div>
+            </p>
+          </Link>
+          <Link
+            href="/known-issues"
+            className={`nav-link ${isKnownIssuesActive ? "nav-link-active" : ""}`}
+          >
+            <p>
+              <div style={{ display: "inline", color: "rgb(0, 0, 0)" }}>Known Issues</div>
             </p>
           </Link>
         </nav>
