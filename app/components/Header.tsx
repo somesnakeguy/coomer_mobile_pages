@@ -2,13 +2,19 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
 
 export default function Header() {
   const pathname = usePathname();
+  const [isHomeActive, setIsHomeActive] = useState(false);
+  const [isChangelogActive, setIsChangelogActive] = useState(false);
+  const [isKnownIssuesActive, setIsKnownIssuesActive] = useState(false);
 
-  const isHomeActive = pathname === "/";
-  const isChangelogActive = pathname === "/changelog";
-  const isKnownIssuesActive = pathname === "/known-issues";
+  useEffect(() => {
+    setIsHomeActive(pathname === "/");
+    setIsChangelogActive(pathname === "/changelog");
+    setIsKnownIssuesActive(pathname === "/known-issues");
+  }, [pathname]);
 
   return (
     <header className="top-nav-header">
