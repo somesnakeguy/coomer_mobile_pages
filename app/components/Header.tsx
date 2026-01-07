@@ -8,6 +8,7 @@ export default function Header() {
 
   const isHomeActive = pathname === "/";
   const isChangelogActive = pathname === "/changelog";
+  const isKnownIssuesActive = pathname === "/known-issues";
 
   return (
     <header className="top-nav-header">
@@ -28,6 +29,14 @@ export default function Header() {
           >
             <p>
               <div style={{ display: "inline", color: "rgb(0, 0, 0)" }}>Changelog</div>
+            </p>
+          </Link>
+          <Link
+            href="/known-issues"
+            className={`nav-link ${isKnownIssuesActive ? "nav-link-active" : ""}`}
+          >
+            <p>
+              <div style={{ display: "inline", color: "rgb(0, 0, 0)" }}>Known Issues</div>
             </p>
           </Link>
         </nav>
