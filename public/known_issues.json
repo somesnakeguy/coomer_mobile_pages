@@ -18,6 +18,12 @@
       "notes": [
         "A viable thumbnail is a non-black/dark as some videos start with a fade or may be in bad light conditions a good thumbnail may take time to be properly found."
       ]
+    },
+    {
+      "issue": "Each post can have either no items, 1 item that is an image/video, or many items that are images/videos.",
+      "notes": [
+        "This is not being fetched correctly at the moment and is in the process of being fixed"
+      ]
     }
   ]
 }
