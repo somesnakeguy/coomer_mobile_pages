@@ -61,6 +61,7 @@ export default function Header() {
           align-items: center;
           justify-content: space-between;
           height: 70px;
+          color: rgba(0, 0, 0, 1);
         }
 
         .logo-link {
