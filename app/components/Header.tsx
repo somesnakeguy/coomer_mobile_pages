@@ -25,25 +25,19 @@ export default function Header() {
             href="/"
             className={`nav-link ${isHomeActive ? "nav-link-active" : ""}`}
           >
-            <p>
-              <div style={{ display: "inline", color: "rgb(0, 0, 0)" }}>Home</div>
-            </p>
+            <span>Home</span>
           </Link>
           <Link
             href="/changelog"
             className={`nav-link ${isChangelogActive ? "nav-link-active" : ""}`}
           >
-            <p>
-              <div style={{ display: "inline", color: "rgb(0, 0, 0)" }}>Changelog</div>
-            </p>
+            <span>Changelog</span>
           </Link>
           <Link
             href="/known-issues"
             className={`nav-link ${isKnownIssuesActive ? "nav-link-active" : ""}`}
           >
-            <p>
-              <div style={{ display: "inline", color: "rgb(0, 0, 0)" }}>Known Issues</div>
-            </p>
+            <span>Known Issues</span>
           </Link>
         </nav>
       </div>
@@ -99,15 +93,7 @@ export default function Header() {
           border-radius: 4px;
         }
 
-        .nav-link p {
-          margin: 0;
-          padding: 0;
-          font-size: 15px;
-          font-weight: 400;
-          display: inline;
-        }
-
-        .nav-link div {
+        .nav-link span {
           display: inline;
           color: rgb(0, 0, 0);
           font-weight: 400;
@@ -117,7 +103,7 @@ export default function Header() {
           color: #333;
         }
 
-        .nav-link:hover div {
+        .nav-link:hover span {
           color: #333;
         }
 
@@ -126,7 +112,7 @@ export default function Header() {
           font-weight: 400;
         }
 
-        .nav-link-active div {
+        .nav-link-active span {
           color: rgb(0, 0, 0);
           font-weight: 400;
         }
