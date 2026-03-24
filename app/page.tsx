@@ -45,7 +45,7 @@ export default function Home() {
           position: "relative",
           height: "auto",
           fontSize: "20px",
-          margin: "30px auto 0 30px",
+          margin: "30px auto 0 auto",
         }}
       >
         <p>
@@ -68,7 +68,7 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             position: "relative",
-            margin: "40px auto 0 30px",
+            margin: "40px auto 0 auto",
             maxWidth: "600px",
             width: "100%",
             padding: "0 20px",
