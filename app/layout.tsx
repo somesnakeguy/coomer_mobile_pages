@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Coomer Mobile Pages",
   description: "Documentation and distribution for coomer.st android application",
+  icons: {
+    icon: "https://cdn.builder.io/api/v1/image/assets%2F97bfa5d272764bffa08255a1846cb4b3%2Ff46f7459269a40d6b9e2e7f141571e90?format=webp&width=800&height=1200",
+  },
 };
 
 export default function RootLayout({
