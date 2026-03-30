@@ -11,19 +11,19 @@
       "issue": "Cannot view creator profile yet"
     },
     {
-      "issue": "Creator post count is not always visible when in \"Creator\" screen"
-    },
-    {
-      "issue": "Video Thumbnail fetching may be slow since my implementation searches for a \"viable thumbnail\"",
+      "issue": "As I reworked base post class this will resolve in fixing:",
       "notes": [
-        "A viable thumbnail is a non-black/dark as some videos start with a fade or may be in bad light conditions a good thumbnail may take time to be properly found."
+        "Creator post count is not always visible when in \"Creator\" screen"
       ]
     },
     {
-      "issue": "Each post can have either no items, 1 item that is an image/video, or many items that are images/videos.",
+      "issue": "Video thumbnail fetching restored",
       "notes": [
-        "This is not being fetched correctly at the moment and is in the process of being fixed"
+        "Further testing is needed to ensure this method works well"
       ]
+    },
+    {
+      "issue": "Favorite posts view is currently broken until further notice"
     }
   ]
 }
