@@ -53,7 +53,7 @@ export default function Home() {
           application for <code>coomer.st</code>.
         </p>
         <p>
-          This mobile application is a "fan made" copy and not in any way
+          This mobile application is "fan made" and not in any way
           officially associated with the website.
         </p>
         <p>
