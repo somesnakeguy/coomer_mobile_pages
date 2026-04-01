@@ -1,17 +1,31 @@
 {
   "current": {
-    "version": "v1.7.0",
-    "releaseSummary": "Changed how post content is viewed",
+    "version": "v1.8.0",
+    "releaseSummary": "Implemented self updated under about",
     "releaseNotes": [
-      "Now all items in a post are shown in a list"
+      "In setting screen under about app can self update"
     ],
-    "apkUrl": "https://somesnakeguy.github.io/coomer_mobile_pages/apks/app-release-1.7.0+24.apk",
-    "releaseDate": "2026-03-30"
+    "apkUrl": "https://somesnakeguy.github.io/coomer_mobile_pages/apks/app-release-1.8.0+26.apk",
+    "releaseDate": "2026-04-01"
   },
   "changelog": [
     {
+      "version": "v1.8.0",
+      "date": "2026-04-01",
+      "summary": "Implemented self updated under about",
+      "notes": [
+        "In setting screen under about app can self update"
+      ]
+    },
+    {
+      "version": "v1.7.1",
+      "date": "2026-04-01",
+      "summary": "Fixed issues with fav post view being broken",
+      "notes": []
+    },
+    {
       "version": "v1.7.0",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Changed how post content is viewed",
       "notes": [
         "Now all items in a post are shown in a list"
@@ -19,7 +33,7 @@
     },
     {
       "version": "v1.6.0",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Major rework to how posts are handled",
       "notes": [
         "Completely reworked base post object class"
@@ -27,7 +41,7 @@
     },
     {
       "version": "v1.5.2",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Fixed how post content is displayed",
       "notes": [
         "Post content which is originally formatted as HTML and are now rendered as so."
@@ -35,7 +49,7 @@
     },
     {
       "version": "v1.5.1",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Corrected download state management",
       "notes": [
         "At 99%+ download progress download will stall this is expected and a limitation of library used."
@@ -43,7 +57,7 @@
     },
     {
       "version": "v1.5.0",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Fixed downloading files",
       "notes": [
         "With correct time reporting in notification and progress notification in \"Download Manager\""
@@ -51,13 +65,13 @@
     },
     {
       "version": "v1.4.94",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Secure app in background to ensure privacy",
       "notes": []
     },
     {
       "version": "v1.4.93",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Added ability to sort favorite posts",
       "notes": [
         "Improved code in login page"
@@ -65,7 +79,7 @@
     },
     {
       "version": "v1.4.92",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Added ability to download images",
       "notes": [
         "Download state management may still be unstable, non-optimal"
@@ -73,7 +87,7 @@
     },
     {
       "version": "v1.4.91",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Updated Posts screen to be able to view recent and popular posts",
       "notes": [
         "Popular posts can view popular posts for past day, week and month"
@@ -81,7 +95,7 @@
     },
     {
       "version": "v1.4.9",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Fixed file downloaded and implemented download manager (not fully functional)",
       "notes": [
         "File download works very well if left alone",
@@ -90,7 +104,7 @@
     },
     {
       "version": "v1.4.2",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Completely reworked how file links are fetched",
       "notes": [
         "This will help with video downloads, slow/no file loading(Needs more testing)."
@@ -98,13 +112,13 @@
     },
     {
       "version": "v1.4.11",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Fixed creator card view",
       "notes": []
     },
     {
       "version": "v1.4.1",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Cancel download from notification",
       "notes": [
         "Optimization to fetching video thumbnail and duration"
@@ -112,13 +126,13 @@
     },
     {
       "version": "v1.4.0",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Added Ability to navigate to next/previous post",
       "notes": []
     },
     {
       "version": "v1.3.3",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Added ability to go to creator if in a post",
       "notes": [
         "This is only from \"popular posts\" screen or favorite posts view"
@@ -126,7 +140,7 @@
     },
     {
       "version": "v1.3.2",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Change bottom navigation so that login screen is first",
       "notes": [
         "Also fixed favorite post state management bug where list was being cleared if app is in background"
@@ -134,7 +148,7 @@
     },
     {
       "version": "v1.3.1",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Minor fix to post cards so that circular progress indicator always aligns with video icon",
       "notes": [
         "Favorite posts/creators are now more easily visible on UI"
@@ -142,7 +156,7 @@
     },
     {
       "version": "v1.3.0",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Adding ability to download posts",
       "notes": [
         "This is currently not fully optimized more improvements coming soon"
@@ -150,7 +164,7 @@
     },
     {
       "version": "v1.2.2",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Improved state management in favorite posts view",
       "notes": [
         "If you are in this view and navigate into a post to unlike it navigate back will show an immediately refreshed favorite post view",
@@ -159,7 +173,7 @@
     },
     {
       "version": "v1.2.1",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Improved state management in creator screen & auto update change",
       "notes": [
         "If in creator screen and you view a creator post while logged in and liked that post then navigate back to creator screen the tint should be directly reflected"
@@ -167,67 +181,67 @@
     },
     {
       "version": "v1.2.0",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Add/remove favorite posts/creator when user is logged in",
       "notes": []
     },
     {
       "version": "v1.1.0",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Identify favorite creators/posts across app when logged in",
       "notes": []
     },
     {
       "version": "v1.0.72",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Standardized creator card across app",
       "notes": []
     },
     {
       "version": "v1.0.71",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Initial steps to show favorite creators/posts",
       "notes": []
     },
     {
       "version": "v1.0.7",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Always show  latest version in about , improved popular posts screen, implemented favorite posts screen",
       "notes": []
     },
     {
       "version": "v1.0.6",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Added a settings screen that has about app, changelog and login preferences.",
       "notes": []
     },
     {
       "version": "v1.0.5",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Add Ability to go see favorite Creators/Posts. Initial Logic for creator code implemented but more understanding is needed around how to get a`post_id`, and added support for most common video extensions.",
       "notes": []
     },
     {
       "version": "v1.0.4",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Additional code rework, gallery view for non video files in a post and add swipe indicator for gallery.",
       "notes": []
     },
     {
       "version": "v1.0.3",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Major code refactor, use bottom navigation in favorite creator view.",
       "notes": []
     },
     {
       "version": "v1.0.2",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Match device theme(to support dark theme), launcher icon.",
       "notes": []
     },
     {
       "version": "v1.0.1",
-      "date": "2026-03-30",
+      "date": "2026-04-01",
       "summary": "Apk test on real device (requires internet permission), sort favorite creators, showing thumbnails.",
       "notes": []
     }

@@ -11,10 +11,7 @@
       "issue": "Cannot view creator profile yet"
     },
     {
-      "issue": "As I reworked base post class this will resolve in fixing:",
-      "notes": [
-        "Creator post count is not always visible when in \"Creator\" screen"
-      ]
+      "issue": "Creator post count is not available"
     },
     {
       "issue": "Video thumbnail fetching restored",
@@ -23,7 +20,7 @@
       ]
     },
     {
-      "issue": "Favorite posts view is currently broken until further notice"
+      "issue": "Next/prev post functionality not avail"
     }
   ]
 }
