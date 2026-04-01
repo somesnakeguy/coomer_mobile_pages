@@ -1,14 +1,22 @@
 {
   "current": {
-    "version": "v1.8.0",
-    "releaseSummary": "Implemented self updated under about",
+    "version": "v1.8.1",
+    "releaseSummary": "Implemented needed dependencies for self update",
     "releaseNotes": [
-      "In setting screen under about app can self update"
+      "App should now be able to self update in prod"
     ],
-    "apkUrl": "https://somesnakeguy.github.io/coomer_mobile_pages/apks/app-release-1.8.0+26.apk",
+    "apkUrl": "https://somesnakeguy.github.io/coomer_mobile_pages/apks/app-release-1.8.1+27.apk",
     "releaseDate": "2026-04-01"
   },
   "changelog": [
+    {
+      "version": "v1.8.1",
+      "date": "2026-04-01",
+      "summary": "Implemented needed dependencies for self update",
+      "notes": [
+        "App should now be able to self update in prod"
+      ]
+    },
     {
       "version": "v1.8.0",
       "date": "2026-04-01",
