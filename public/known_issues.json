@@ -11,12 +11,21 @@
       "issue": "Cannot view creator profile yet"
     },
     {
-      "issue": "Creator post count is not available"
+      "issue": "Creator post count is not always available",
+      "notes": [
+        "Due to state management + data structure on server side"
+      ]
     },
     {
       "issue": "Video thumbnail fetching restored",
       "notes": [
         "Further testing is needed to ensure this method works well"
+      ]
+    },
+    {
+      "issue": "First time fetch of creator posts can be slow as I fetch all post details in page",
+      "notes": [
+        "To do some additional reworking of post class methods to speed this up"
       ]
     }
   ]
