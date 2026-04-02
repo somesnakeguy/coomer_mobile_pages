@@ -1,14 +1,18 @@
 {
   "current": {
-    "version": "v1.10.0",
-    "releaseSummary": "Fix some issues when fetching creator posts",
-    "releaseNotes": [
-      "This is now functional but slow"
-    ],
-    "apkUrl": "https://somesnakeguy.github.io/coomer_mobile_pages/apks/app-release-1.10.0+28.apk",
+    "version": "v1.10.1",
+    "releaseSummary": "Fix creator post media/thumbnail bug",
+    "releaseNotes": [],
+    "apkUrl": "https://somesnakeguy.github.io/coomer_mobile_pages/apks/app-release-1.10.1+29.apk",
     "releaseDate": "2026-04-02"
   },
   "changelog": [
+    {
+      "version": "v1.10.1",
+      "date": "2026-04-02",
+      "summary": "Fix creator post media/thumbnail bug",
+      "notes": []
+    },
     {
       "version": "v1.10.0",
       "date": "2026-04-02",
