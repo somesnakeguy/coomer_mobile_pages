@@ -1,12 +1,24 @@
 {
   "current": {
-    "version": "v1.11.1",
-    "releaseSummary": "Fixed post image thumbnail fetching",
-    "releaseNotes": [],
-    "apkUrl": "https://somesnakeguy.github.io/coomer_mobile_pages/apks/app-release-1.11.1+31.apk",
+    "version": "v1.12.0",
+    "releaseSummary": "Video player cache + thumbnail",
+    "releaseNotes": [
+      "Use cache to reduce buffering for recently played videos",
+      "use FFMPEG to generate more robust video thumbnails"
+    ],
+    "apkUrl": "https://somesnakeguy.github.io/coomer_mobile_pages/apks/app-release-1.12.0+31.apk",
     "releaseDate": "2026-04-06"
   },
   "changelog": [
+    {
+      "version": "v1.12.0",
+      "date": "2026-04-06",
+      "summary": "Video player cache + thumbnail",
+      "notes": [
+        "Use cache to reduce buffering for recently played videos",
+        "use FFMPEG to generate more robust video thumbnails"
+      ]
+    },
     {
       "version": "v1.11.1",
       "date": "2026-04-06",

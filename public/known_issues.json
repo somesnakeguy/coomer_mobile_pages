@@ -19,7 +19,7 @@
     {
       "issue": "Video thumbnail fetching restored",
       "notes": [
-        "Further testing is needed to ensure this method works well"
+        "Using FFMPEG kit for video thumbnail generation"
       ]
     }
   ]
