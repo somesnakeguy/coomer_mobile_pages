@@ -1,15 +1,22 @@
 {
   "current": {
-    "version": "v1.12.0",
-    "releaseSummary": "Video player cache + thumbnail",
+    "version": "v1.12.1",
+    "releaseSummary": "Fix app update bug",
     "releaseNotes": [
-      "Use cache to reduce buffering for recently played videos",
-      "use FFMPEG to generate more robust video thumbnails"
+      "APK tracking uses git LFS changing the download url"
     ],
     "apkUrl": "https://github.com/somesnakeguy/coomer_mobile_pages/raw/refs/heads/main/public/apks/app-release-1.12.1+33.apk",
     "releaseDate": "2026-04-06"
   },
   "changelog": [
+    {
+      "version": "v1.12.1",
+      "date": "2026-04-06",
+      "summary": "Fix app update bug",
+      "notes": [
+        "APK tracking uses git LFS changing the download url"
+      ]
+    },
     {
       "version": "v1.12.0",
       "date": "2026-04-06",
