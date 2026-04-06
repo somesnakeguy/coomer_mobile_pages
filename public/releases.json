@@ -1,15 +1,18 @@
 {
   "current": {
-    "version": "v1.11.0",
-    "releaseSummary": "Additional changes to post class",
-    "releaseNotes": [
-      "Utilizing different post constructor to deal with different data structures on server side",
-      "This helped with creator post fetching speeds"
-    ],
-    "apkUrl": "https://somesnakeguy.github.io/coomer_mobile_pages/apks/app-release-1.11.0+30.apk",
+    "version": "v1.11.1",
+    "releaseSummary": "Fixed post image thumbnail fetching",
+    "releaseNotes": [],
+    "apkUrl": "https://somesnakeguy.github.io/coomer_mobile_pages/apks/app-release-1.11.1+31.apk",
     "releaseDate": "2026-04-06"
   },
   "changelog": [
+    {
+      "version": "v1.11.1",
+      "date": "2026-04-06",
+      "summary": "Fixed post image thumbnail fetching",
+      "notes": []
+    },
     {
       "version": "v1.11.0",
       "date": "2026-04-06",
