@@ -1,14 +1,28 @@
 {
   "current": {
-    "version": "v1.12.4",
-    "releaseSummary": "App version plugin bug",
+    "version": "v1.12.6",
+    "releaseSummary": "Specific post view error display in prod",
     "releaseNotes": [
-      "Additional hardening for app version detection"
+      "Not sure why there are all these prod issues"
     ],
-    "apkUrl": "https://github.com/somesnakeguy/coomer_mobile_pages/raw/refs/heads/main/public/apks/app-release-1.12.5+37.apk",
+    "apkUrl": "https://github.com/somesnakeguy/coomer_mobile_pages/raw/refs/heads/main/public/apks/app-release-1.12.6+38.apk",
     "releaseDate": "2026-04-07"
   },
   "changelog": [
+    {
+      "version": "v1.12.6",
+      "date": "2026-04-07",
+      "summary": "Specific post view error display in prod",
+      "notes": [
+        "Not sure why there are all these prod issues"
+      ]
+    },
+    {
+      "version": "v1.12.5",
+      "date": "2026-04-07",
+      "summary": "Do not initialize package info plugin",
+      "notes": []
+    },
     {
       "version": "v1.12.4",
       "date": "2026-04-07",
