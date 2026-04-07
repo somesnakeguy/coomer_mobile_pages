@@ -21,6 +21,9 @@
       "notes": [
         "Using FFMPEG kit for video thumbnail generation"
       ]
+    },
+    {
+      "issue": "App version detection is failing"
     }
   ]
 }
