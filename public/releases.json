@@ -1,12 +1,26 @@
 {
   "current": {
-    "version": "v1.12.8",
-    "releaseSummary": "Fix video thumbnail generation",
+    "version": "v1.12.9",
+    "releaseSummary": "Completely disable optimizations",
     "releaseNotes": [],
-    "apkUrl": "https://github.com/somesnakeguy/coomer_mobile_pages/raw/refs/heads/main/public/apks/app-release-1.12.8+40.apk",
+    "apkUrl": "https://github.com/somesnakeguy/coomer_mobile_pages/raw/refs/heads/main/public/apks/app-release-1.12.9+41.apk",
     "releaseDate": "2026-04-07"
   },
   "changelog": [
+    {
+      "version": "v1.12.9",
+      "date": "2026-04-07",
+      "summary": "Completely disable optimizations",
+      "notes": []
+    },
+    {
+      "version": "v1.12.8",
+      "date": "2026-04-07",
+      "summary": "Additional crash fixes",
+      "notes": [
+        "Do not optimize ffmpeg library"
+      ]
+    },
     {
       "version": "v1.12.7",
       "date": "2026-04-07",
