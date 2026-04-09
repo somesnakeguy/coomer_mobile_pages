@@ -1,14 +1,22 @@
 {
   "current": {
-    "version": "v1.13.1",
-    "releaseSummary": "Lazy image loading in specific posts",
+    "version": "v1.13.2",
+    "releaseSummary": "Image caching improved for specific posts",
     "releaseNotes": [
-      "Improvements to state management"
+      "Improved video player state management"
     ],
-    "apkUrl": "https://github.com/somesnakeguy/coomer_mobile_pages/raw/refs/heads/main/public/apks/app-release-1.13.1+43.apk",
+    "apkUrl": "https://github.com/somesnakeguy/coomer_mobile_pages/raw/refs/heads/main/public/apks/app-release-1.13.2+44.apk",
     "releaseDate": "2026-04-09"
   },
   "changelog": [
+    {
+      "version": "v1.13.2",
+      "date": "2026-04-09",
+      "summary": "Image caching improved for specific posts",
+      "notes": [
+        "Improved video player state management"
+      ]
+    },
     {
       "version": "v1.13.1",
       "date": "2026-04-09",
