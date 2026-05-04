@@ -35,7 +35,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-screen bg-zinc-50 font-sans dark:bg-black">
       <div className="flex flex-col relative">
         <div style={{ fontSize: "30px", fontWeight: "400", lineHeight: "45px", marginTop: "10px" }}>
-          <h1>Welcome to Coomer Mobile Site</h1>
+          <h1>Welcome to Coomer Mobile Site</h1>          
         </div>
       </div>
       <div
@@ -49,8 +49,16 @@ export default function Home() {
         }}
       >
         <p>
+          <h1>This site will be shutdown by end of May 2026.</h1>
+          Due to data servers of <a href="coomer.st">coomer.st</a> being no longer accessible.<br></br>
+          This will result in no loadable content on mobile application side.
+          <br></br>
+        </p>
+        
+        <p>
+          <br></br>
           This website is intended to document and explain the android
-          application for <code>coomer.st</code>.
+          application for <a href="coomer.st">coomer.st</a>.
         </p>
         <p>
           This mobile application is "fan made" and not in any way
